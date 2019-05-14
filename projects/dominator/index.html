@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Dominator BrielleL</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/dominator.css">
+
+
+</head>
+<body>
+    <div id="page"></div>
+    <hr class="my-4">
+    <div id="wrap">
+    <h1>DOM-inator! / Created by Brielle L / May 2019</h1>
+ <br>
+
+ <div class="card bg-dark m-auto w-75">
+<h5 class="card-header text-light">
+    <span class="h1 text-warning font-italic mr-2">JavaScript</span> DOM-inator
+    <span class="btn btn-sm btn-danger float-right" onclick= "hide_Ele()">X</span>
+</h5>
+<div class="card-body row">
+    <div class="input-group">
+        <input type="text" class="col-2" placeholder="tagName">
+        <input type="text" class="col-10" placeholder="className">
+        <input type="text" class="col-2" placeholder="id">
+        <input type="text" class="col-8" placeholder="innerHTML">
+        <input type="text" class="col-2" placeholder="parent id">
+    </div>
+    <div class="btn-group mt-2">
+        <span class="span btn btn-warning" onclick="create_Ele()">Create New Element</span>
+        <span class="span btn btn-danger" onclick="remove_Ele()">Remove Last Element</span>
+        <span class="span btn btn-outline-secondary" onclick="reset()">Reset</span>
+    </div>
+</div>
+</div>
+</div>
+<br>
+<h2><p>I created a program that produces Elements depending on what is inserted.</p>
+    <p>TagName is what you are wanting to insert, so for example like H1, or div.
+    className is any styling you are wanting to insert as long as it is DOM.</p>
+    <p>id is classifying the element and innerHTML is if you would like any words
+    to appear.</p><p>Parent id is if you are trying to insert something into the 
+    previous element. For example, inserting words into a div that was previously 
+    created.</p> </h2>
+</p>
+<br>
+<h2><p>The three buttons at the bottom which include: Create New Element, Remove
+    Last Element and Reset, all have specfic functions.</p><p> Create New Element inserts
+    the information you have filled out. Remove last Element removes the most 
+    recent element that you have created. Reset clears the entire field.
+</p></h2>
+<br>
+
+<div id="examples">
+    <table class="table table-dark table-hover">
+        <thread>
+          <tr>
+            <th>Examples of Bootstrap 4:</th>
+        </tr>
+    </thread>
+    <tbody>
+        <tr>
+            <td>Danger (same as red)</td>
+        </tr>
+            <tr>
+                <td>Primary (same as blue</td>
+            </tr>
+            <tr>
+                <td>btn (button)</td>
+            </tr>
+            <tr>
+                <td>btn btn-outline-primary (a button with a blue outline)</td>
+            </tr>
+        </tbody>
+        
+        </table>
+    </div>
+</body>
+<script src="js/dominator.js"></script>
+
+
+</html>

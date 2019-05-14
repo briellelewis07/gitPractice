@@ -1,0 +1,17 @@
+body {
+    background-color: lightsteelblue;
+}
+
+h1 {
+    text-align: center;
+    color: maroon;
+}
+h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#examples {
+   
+    text-align: center;
+}

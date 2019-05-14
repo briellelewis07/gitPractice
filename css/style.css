@@ -1,0 +1,41 @@
+body {
+  background-image: linear-gradient(blue, pink, purple);
+  font-family: 'Fredoka One', cursive;
+}
+#grid-container{
+  font-family: 'Fredoka One', cursive;
+}
+
+#item1, #item2, #item3, #item4, #item5 {
+  font-family: 'Fredoka One', cursive;
+}
+
+@media screen and (max-width: 40em) {
+  .grid-container {
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer"
+    "menu menu menu menu";
+  }
+}
+
+hr {
+
+  color: pink;
+}
+
+#clockDisplay {
+  background-color: lightpink;
+  border-style: inset;
+  border-width: 3px;
+  border-color: lightcoral;
+  padding: 10px 10px 10px 10px;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 2px 8px 2px lightsalmon;
+  width: 600px;
+  height: 60px;
+  box-sizing: border-box;
+}

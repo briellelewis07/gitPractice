@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Document</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum|Fredoka+One|Khand|Righteous" rel="stylesheet">
+  <script src="./js/clock.js"></script>
+</head>
+
+<style>
+#box {
+margin: 0 auto;
+width: 75%;
+
+}
+
+
+
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+
+
+.grid-container {
+  display: grid;
+  /*
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    */
+
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+
+grid-template-areas:
+  "...  header header ..."
+"menu main main  right"
+"...  main main right"
+"... footer footer ...";
+  grid-gap: 10px;
+  background-color:#944dff;
+  padding: 10px;
+}
+.grid-container div {
+  background-color:#b3d9ff;
+  text-align: center;
+  padding: 85px 0;
+  font-size: 30px;
+  border-style: solid;
+  border-width: 10px;
+  box-shadow: 5px 5px pink;
+
+}
+</style>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+<body onload="renderTime()">
+    <h1>DOM Time! / Created by Brielle L / April 2019</h1>
+    <div id='clockDisplay' class='container'></div>
+  <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="http://www.google.com" class="w3-bar-item w3-button">Google</a>
+  <a href="http://192.168.1.153/b2/zacharys/" class="w3-bar-item w3-button">Zachary S</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+<!-- Page Content -->
+<div class="w3-pink">
+  <button class="w3-button w3-pink w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+
+  </div>
+</div>
+
+  <div id="box" class="grid-container">
+
+    <div class="header">Computer Science Project Portfolio for Brielle Lewis</div>
+    <div class="menu">
+        
+<a href= "http://www.westada.org/chs" target="_blank"> <img id = "chs" src="logos/logo_centennial-04.png" width="250px" /></a>
+<a href= "http://www.westada.org" target="_blank"> <img id = "westada" src="logos/West Ada-23.png" width="250px" /></a>
+
+    </div>
+    <div class="main">Links to my Projects
+<h3><a href="pages/vm.html">How to Create a Virtual Machine</a></h3>
+<h3><a href="pages/installing.html">What you should install</a></h3>
+<h3><a href="pages/createtable.html">Creating a Database and Table</a></h3>
+<h3><a href="pages/joins.html">Using Joins</a></h3>
+<h3><a href="pages/mongodb.html">MongoDB</a></h3>
+<h3><a href="pages/regexqueries.html">RegEx Queries</a></h3>
+<h3><a href="pages/schema.html">Schema Model Express</a></h3>
+<h3><a href="pages/Postman.html">Postman</a></h3>
+<h3><a href="pages/dadjokes.html">Dad Jokes</a></h3>
+<h3><a href="projects/dominator/index.html">The DOM-inator!</a></h3>
+
+<br>
+<hr>
+<br>
+<h2>Here are a few of my classmates work</h2>
+<a href="http://www.westada.tech/b2/zacharys" class="w3-bar-item w3-button">Zachary S</a>
+<a href="http://www.westada.tech/b2/tannerh" class="w3-bar-item w3-button">Tanner H</a>
+<a href="http://www.westada.tech/b2/brockd" class="w3-bar-item w3-button">Brock D</a>
+    </div>
+
+    <div class="right">I am a Senior at CHS</div>
+<div class="footer"> enjoy my websites</div>
+
+  </div>
+
+
+</body>
+<html>
